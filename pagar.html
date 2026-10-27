@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inscripción y pago · Euforia Gym</title>
+<meta name="description" content="Inscríbete en Euforia Gym: elige plan y sede, y paga con Yape, Plin, transferencia, tarjeta o en la sede.">
+<meta name="theme-color" content="#232122">
+<meta property="og:title" content="Inscripción y pago · Euforia Gym">
+<meta property="og:description" content="Inscríbete en Euforia Gym: elige plan y sede, y paga con Yape, Plin, transferencia, tarjeta o en la sede.">
+<meta property="og:image" content="img/poster/hero.webp">
+<meta property="og:locale" content="es_PE">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/logo-128.png">
+<script>try{if(sessionStorage.getItem("euf-nav")==="1"){document.documentElement.classList.add("from-nav");sessionStorage.removeItem("euf-nav")}}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="pagar">
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="curtain" aria-hidden="true"><img src="img/logo-lockup.webp" width="1200" height="678" alt=""></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Euforia Gym, inicio"><img src="img/logo-h.webp" width="1086" height="160" alt="Euforia Gym"></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html" data-page="inicio">Inicio</a></li>
+        <li><a href="clases.html" data-page="clases">Clases</a></li>
+        <li><a href="planes.html" data-page="planes">Planes</a></li>
+        <li><a href="sedes.html" data-page="sedes">Sedes</a></li>
+        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="my-sede-chip" href="sedes.html" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Tu sede: <b class="my-sede-name"></b></span></a>
+    <a class="btn sun" href="pagar.html">Inscríbete</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mMenu" aria-label="Abrir menú"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label" aria-hidden="true">Menú</span></button>
+  </div>
+</header>
+<!-- Menú del celular: pantalla completa que se abre desde el botón de 3 rayas (js: initMenu) -->
+<div class="m-menu" id="mMenu" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+  <img class="mm-mark" src="img/logo-e.webp" width="761" height="512" alt="" aria-hidden="true">
+  <div class="mm-inner">
+    <nav aria-label="Menú principal">
+      <ul class="mm-links">
+          <li style="--i:0"><a href="index.html" data-page="inicio"><span class="mm-t">Inicio</span><span class="mm-d">Portada, comunidad y cómo empezar</span><svg class="mm-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li style="--i:1"><a href="clases.html" data-page="clases"><span class="mm-t">Clases</span><span class="mm-d">Pesas, spinning, funcional y zumba</span><svg class="mm-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li style="--i:2"><a href="planes.html" data-page="planes"><span class="mm-t">Planes</span><span class="mm-d">Starter, Power y Elite Fin de Año</span><svg class="mm-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li style="--i:3"><a href="sedes.html" data-page="sedes"><span class="mm-t">Sedes</span><span class="mm-d">Mapa, horarios y la sede más cercana</span><svg class="mm-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li style="--i:4"><a href="contacto.html" data-page="contacto"><span class="mm-t">Contacto</span><span class="mm-d">WhatsApp, formulario y redes</span><svg class="mm-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="mm-foot" style="--i:5">
+      <p class="open-now mm-open"><i></i><span class="open-text">Horario de atención todos los días</span></p>
+      <a class="my-sede-chip mm-sede" href="sedes.html" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Tu sede: <b class="my-sede-name"></b></span></a>
+      <div class="mm-ctas">
+        <a class="btn sun" href="pagar.html">Inscríbete <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn wa" href="https://api.whatsapp.com/send?phone=51982814717" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg> WhatsApp</a>
+      </div>
+      <div class="mm-social">
+        <a href="https://instagram.com/euforiagymperu" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/gymeuforia" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@euforia.gym.per" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </div>
+</div>
+<aside aria-label="WhatsApp"><a class="float-wa" href="https://api.whatsapp.com/send?phone=51982814717" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg></a></aside>
+<div id="smooth-wrapper"><div id="smooth-content">
+<main id="main">
+  <!-- Landing de pago: todo el formulario está en la primera pantalla de trabajo, sin video (las tomas no se repiten) -->
+  <section class="pay-hero">
+    <img class="pay-mark" src="img/logo-e.webp" width="761" height="512" alt="" aria-hidden="true">
+    <div class="wrap">
+      <span class="crumb" data-fade>Inscripción</span>
+      <h1 data-split="load">Paga tu plan y <span class="hl">empieza a entrenar.</span></h1>
+      <p class="lede" data-fade>Elige tu plan, tu sede y cómo quieres pagar. Te confirmamos por WhatsApp y tu membresía queda activa desde la fecha que elijas.</p>
+      <ul class="pay-trust" data-fade>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Tus datos solo se usan para tu inscripción</span></li>
+        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg><span>Confirmación por WhatsApp</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10h18M9 20v-6h6v6"/></svg><span>También puedes pagar en la sede</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pay-sec" id="pago">
+    <div class="wrap co-grid">
+      <form class="co" id="checkout" novalidate>
+        <fieldset class="co-step">
+          <legend><span class="co-n">1</span>Elige tu plan</legend>
+          <div class="po-grid">
+            <label class="po"><input type="radio" name="plan" value="starter"><span class="po-box"><span class="po-name">Starter</span><span class="po-price"><b>S/59</b> al mes</span><span class="po-line">Sala de pesas en 1 sede</span></span></label>
+            <label class="po"><input type="radio" name="plan" value="power" checked><span class="po-box"><span class="po-name">Power</span><span class="po-price"><b>S/99</b> al mes</span><span class="po-line">4 sedes y todas las clases</span></span></label>
+            <label class="po"><input type="radio" name="plan" value="elite"><span class="po-box"><span class="po-name">Elite Fin de Año</span><span class="po-price"><b>S/380</b> pago único</span><span class="po-line">Todo incluido hasta el 31 de diciembre</span></span></label>
+          </div>
+          <div class="field co-months" id="monthsField">
+            <label for="meses">¿Cuántos meses quieres pagar?</label>
+            <div class="stepper"><button type="button" class="st-btn" data-d="-1" aria-label="Un mes menos">−</button><output id="mesesOut" for="meses" aria-live="polite">1 mes</output><button type="button" class="st-btn" data-d="1" aria-label="Un mes más">+</button><input type="hidden" id="meses" name="meses" value="1"></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="co-step">
+          <legend><span class="co-n">2</span>Sede y fecha de inicio</legend>
+          <div class="row2">
+            <div class="field"><label for="co-sede">Sede</label><select id="co-sede" name="sede"><option value="centro">Centro</option><option value="porvenir">El Porvenir</option><option value="ovalo">Óvalo La Familia</option><option value="marina">La Marina</option><option value="pardo">Av. Pardo (nueva)</option></select></div>
+            <div class="field"><label for="inicio">Empiezo el</label><input id="inicio" name="inicio" type="date" required></div>
+          </div>
+          <p class="co-hint" id="sedeHint">Con Power puedes entrenar en las 4 sedes; esta es solo la que más usarás.</p>
+        </fieldset>
+
+        <fieldset class="co-step">
+          <legend><span class="co-n">3</span>Tus datos</legend>
+          <div class="row2">
+            <div class="field" id="c-name"><label for="co-name">Nombre y apellido</label><input id="co-name" name="name" autocomplete="name" required><span class="err" hidden>Escribe tu nombre y apellido.</span></div>
+            <div class="field" id="c-dni"><label for="co-dni">DNI</label><input id="co-dni" name="dni" inputmode="numeric" maxlength="8" autocomplete="off" required><span class="err" hidden>El DNI tiene 8 dígitos.</span></div>
+          </div>
+          <div class="row2">
+            <div class="field" id="c-phone"><label for="co-phone">Celular (WhatsApp)</label><input id="co-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="987 654 321" required><span class="err" hidden>Necesitamos 9 dígitos que empiecen con 9.</span></div>
+            <div class="field"><label for="co-mail">Correo <span class="opt">(opcional)</span></label><input id="co-mail" name="mail" type="email" autocomplete="email"></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="co-step">
+          <legend><span class="co-n">4</span>¿Cómo quieres pagar?</legend>
+          <div class="pm-grid">
+            <label class="pm"><input type="radio" name="metodo" value="yape" checked><span class="pm-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="pm-t">Yape</span><span class="pm-d">Desde tu app, al instante</span></span></label>
+            <label class="pm"><input type="radio" name="metodo" value="plin"><span class="pm-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="pm-t">Plin</span><span class="pm-d">Desde tu app de banco</span></span></label>
+            <label class="pm"><input type="radio" name="metodo" value="transferencia"><span class="pm-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 21h18"/></svg><span class="pm-t">Transferencia</span><span class="pm-d">Depósito o transferencia bancaria</span></span></label>
+            <label class="pm"><input type="radio" name="metodo" value="tarjeta"><span class="pm-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><span class="pm-t">Tarjeta</span><span class="pm-d">Débito o crédito con link de pago</span></span></label>
+            <label class="pm"><input type="radio" name="metodo" value="sede"><span class="pm-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10h18M9 20v-6h6v6"/></svg><span class="pm-t">En la sede</span><span class="pm-d">Efectivo o tarjeta en recepción</span></span></label>
+          </div>
+          <label class="co-terms"><input type="checkbox" id="terms" required> <span>Acepto que Euforia Gym me contacte por WhatsApp para confirmar mi inscripción.</span></label>
+          <p class="err" id="termsErr" hidden>Marca la casilla para continuar.</p>
+        </fieldset>
+        <button class="btn sun co-submit" type="submit">Confirmar inscripción <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+
+      <aside class="co-summary" aria-label="Resumen de tu inscripción">
+        <h2>Tu resumen</h2>
+        <dl>
+          <div><dt>Plan</dt><dd id="sPlan">Power</dd></div>
+          <div><dt>Duración</dt><dd id="sDur">1 mes</dd></div>
+          <div><dt>Sede</dt><dd id="sSede">Centro</dd></div>
+          <div><dt>Vigencia</dt><dd id="sVig">—</dd></div>
+          <div><dt>Pago</dt><dd id="sPago">Yape</dd></div>
+        </dl>
+        <div class="s-total"><span>Total</span><b id="sTotal">S/99</b></div>
+        <p class="s-note">Precios publicados por el gym. Te confirmamos la promo vigente antes de pagar.</p>
+      </aside>
+    </div>
+
+    <!-- Confirmación: aparece al enviar, con las instrucciones del método elegido -->
+    <div class="wrap">
+      <section class="done" id="done" hidden tabindex="-1" aria-live="polite">
+        <div class="done-head"><span class="done-ok" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><h2>¡Listo, <span id="dName"></span>!</h2><p>Tu código de inscripción es <b id="dCode"></b>. Guárdalo.</p></div></div>
+        <div class="done-grid">
+          <div class="done-steps" id="dSteps"></div>
+          <div class="done-card">
+            <dl id="dSummary"></dl>
+            <a class="btn wa" id="dWa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg> Enviar a Euforia por WhatsApp</a>
+            <button class="btn ghost" type="button" id="dCopy">Copiar resumen</button>
+            <button class="link-arrow" type="button" id="dEdit">Cambiar algo</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="faq-sec dark">
+    <div class="wrap faq-grid">
+      <div class="sec-head">
+        <h2 data-split>Antes de pagar</h2>
+        <p>Lo que más nos preguntan sobre la inscripción.</p>
+      </div>
+      <div class="faq">
+        <details><summary>¿Cuándo se activa mi membresía?<i></i></summary><p>Desde la fecha de inicio que elijas, una vez que confirmamos tu pago por WhatsApp.</p></details>
+        <details><summary>¿Puedo pagar en efectivo?<i></i></summary><p>Sí. Elige "En la sede" y paga en recepción el día que vengas. Lleva tu código de inscripción.</p></details>
+        <details><summary>¿Qué incluye cada plan?<i></i></summary><p>Starter: sala de pesas en una sede. Power: las 4 sedes, spinning, zumba, funcional y seguimiento mensual. Elite Fin de Año: lo mismo que Power, pagando una vez hasta el 31 de diciembre.</p></details>
+        <details><summary>¿Y si me equivoqué en algo?<i></i></summary><p>No pasa nada: escríbenos por WhatsApp con tu código de inscripción y lo corregimos antes de que pagues.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand brand-lg" href="index.html"><img src="img/logo-lockup.webp" width="1200" height="678" alt="Euforia Gym"></a>
+        <p style="margin-top:14px;max-width:34ch">Tu aliado para potenciar tu salud y bienestar físico y mental. Chimbote y Nuevo Chimbote.</p>
+        <div class="social">
+          <a href="https://instagram.com/euforiagymperu" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/gymeuforia" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg></a>
+          <a href="https://tiktok.com/@euforia.gym.per" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3h-3.1v12.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .5 0 .8.1V9.4a5.8 5.8 0 1 0 5 5.8V9a7.3 7.3 0 0 0 4.2 1.3V7.2a4.2 4.2 0 0 1-4.2-4.2z"/></svg></a>
+        </div>
+      </div>
+      <div><h2>Páginas</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="clases.html">Clases</a></li><li><a href="planes.html">Planes</a></li><li><a href="sedes.html">Sedes</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="pagar.html">Pagar mi plan</a></li></ul></div>
+      <div><h2>Sedes</h2><ul><li><a href="sedes.html">Centro · Av. Manuel Ruiz 455</a></li><li><a href="sedes.html">El Porvenir</a></li><li><a href="sedes.html">Óvalo La Familia</a></li><li><a href="sedes.html">La Marina</a></li><li><a href="sedes.html">Av. Pardo #1928 · nueva</a></li></ul></div>
+      <div><h2>Contacto</h2><ul><li><a href="https://api.whatsapp.com/send?phone=51982814717" target="_blank" rel="noopener">+51 982 814 717</a></li><li><a href="mailto:euforiagym@hotmail.com">euforiagym@hotmail.com</a></li><li><a href="https://whatsapp.com/channel/0029Vb4tnuO0AgWLDt2mAg36" target="_blank" rel="noopener">Canal de WhatsApp</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Euforia Gym · Chimbote, Áncash</span><span>Videos: Pexels · Fotos: Unsplash</span></div>
+  </div>
+</footer>
+</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
